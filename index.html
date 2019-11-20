@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 px-3 py-3 mt-5 bg-info">
+                <h2 class="py-2 bg-dark text-center text-light">Form Validation with JavaScript</h2>
+                <form onsubmit="return validation()">
+                    <div class="form-group">
+                        <label for="fName">First name</label>
+                        <input type="text" class="form-control" id="fName" placeholder="First Name">
+                        <span id="fnameerror" class="text-dark font-weight-bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="lName">Last name</label>
+                        <input type="text" class="form-control" id="lName" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        <span id="emailerror" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <span id="passworderror" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="cPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="comment" rows="3" placeholder="you messsage"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
